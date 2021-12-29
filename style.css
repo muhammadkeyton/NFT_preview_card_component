@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --mainBG:hsl(217, 54%, 11%);
+    --cardBG:hsl(216, 50%, 16%);
+    --paragraphcolor:hsl(215, 51%, 70%);
+    --cyancolor:hsl(178, 100%, 50%);
+
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--mainBG);
+}
+
+p{
+    font-size: 16px;
+    color:var(--paragraphcolor);
+}
+
+.card{
+    width:21rem;
+    margin:40px auto 10px;
+    border-radius:15px;
+    background-color: var(--cardBG);
+
+}
+
+.top-img{
+    text-align: center;
+    margin:22px auto 0;
+    position:relative;
+
+}
+.card-img-top{
+    max-width: 85%;
+    border-radius: 10px;
+    position:relative;
+}
+
+.top-img::after {
+    content:"";
+    display:block;
+    width:85%;
+    height:100%;
+    background:url("images/icon-view.svg") var(--cyancolor) no-repeat center;
+    border-radius:10px;
+    position:absolute;
+    opacity:0;
+    left:25.1px;
+    top:0;
+    cursor:pointer;
+   
+}
+
+.top-img:hover::after{
+    opacity:0.6;
+}
+
+.card-body{
+    margin:5px 9px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight:600;
+    margin:5px 0 15px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.card-title:hover{
+    color:var(--cyancolor);
+}
+
+
+
+.card-text{
+    font-weight: lighter;
+}
+
+.ethereum{
+    font-weight: normal;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:relative;
+}
+
+.ethereum-images{
+    position:absolute;
+}
+
+.clock-icon{
+    right:78px;
+    bottom:3px;
+}
+
+.ethereum-quantity{
+    margin:0;
+    margin-left:18px;
+    color:var(--cyancolor)
+}
+
+.ethereum-time{
+    margin:0;
+}
+
+.creation-part{
+    color:#fff;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.avatar-img{
+    max-width:12%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.creation-text{
+    margin-bottom:0;
+    margin-left:13px;
+    word-spacing:3px;
+}
+
+.creator{
+    color:#fff;
+    cursor:pointer;
+}
+
+.creator:hover{
+    color:var(--cyancolor);
+}
+
+.attribution{
+    color:#fff;
+    text-align: center;
+    margin:0 auto;
+}
