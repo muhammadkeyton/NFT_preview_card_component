@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+
+/* colors for the backgrounds and text colors */
 :root{
     --mainBG:hsl(217, 54%, 11%);
     --cardBG:hsl(216, 50%, 16%);
@@ -20,9 +22,11 @@ p{
     color:var(--paragraphcolor);
 }
 
+
+/* general card style */
 .card{
     width:21rem;
-    margin:40px auto 10px;
+    margin:40px auto 20px;
     border-radius:15px;
     background-color: var(--cardBG);
 
@@ -40,6 +44,8 @@ p{
     position:relative;
 }
 
+
+/* positioning a pseudo element above the top image to add the cyan color on hover */
 .top-img::after {
     content:"";
     display:block;
@@ -52,12 +58,13 @@ p{
     left:25.1px;
     top:0;
     cursor:pointer;
-   
+    transition:ease-in-out 800ms;
 }
 
 .top-img:hover::after{
     opacity:0.6;
 }
+
 
 .card-body{
     margin:5px 9px;
